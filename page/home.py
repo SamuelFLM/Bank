@@ -13,7 +13,7 @@ def home():
         [sg.Image(filename="img\img home\Icon\Precisa de ajuda_.png", background_color=background, pad=(0,(50,0)))],
     ]
     layout = [cabecalho, login]
-    window = sg.Window("a", layout=layout, size=(293,510), background_color=background,grab_anywhere=True, element_justification="center")
+    window = sg.Window("Ion Itau", layout=layout, size=(293,510), background_color=background,grab_anywhere=True, element_justification="center")
     return window
 
 window = home()
