@@ -1,6 +1,6 @@
 import pyodbc
 
-class banco_de_dados:
+class Connection:
     
     def __init__(self):
         self.server = "localhost\SQLEXPRESS"
@@ -8,8 +8,6 @@ class banco_de_dados:
 
         cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+self.server+';DATABASE='+self.database+';Trusted_Connection=yes;')
         cursor = cnxn.cursor()
-        print("deu bom")
-
 
 if __name__ == "__main__":
-    conexao = banco_de_dados()
+    conexao = Connection()
