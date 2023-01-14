@@ -19,7 +19,8 @@ def login():
     ]
     
     rodape = [
-        [sg.Image(filename="img\img Login\Icon\esquerda.png", background_color=background,pad=(30,(60,0))),sg.Image(filename="img\img Login\Icon\direita.png", background_color=background,pad=(30,(60,0)))]
+        [sg.Image(filename="img\img Login\Icon\esquerda.png", background_color=background,pad=(30,(60,0)),enable_events=True,key="voltar"),
+         sg.Image(filename="img\img Login\Icon\direita.png", background_color=background,pad=(30,(60,0)),enable_events=True,key="continuar")]
     ]
     
     layout = [cabecalho, cadastro,rodape]
@@ -34,3 +35,9 @@ while True:
     
     if event == sg.WIN_CLOSED:
         break
+    
+    if event == "voltar":
+        print("voltando")
+    if event == "continuar":
+        print("continuando")
+        
