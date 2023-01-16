@@ -1,5 +1,6 @@
 from conexao import Connection
 from register import Register
+
 class Login:
     def __init__(self, registro):
         self.conexao = Connection()    
@@ -19,5 +20,5 @@ class Login:
                 
     
 if __name__  == "__main__":
-    login = Login(Register("email@gmail.com", "1234567"))
+    login = Login(Register("admin", "admin"))
     login.validacao_usuario_existente()

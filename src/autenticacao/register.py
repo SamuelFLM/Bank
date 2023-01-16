@@ -16,5 +16,5 @@ class Register:
         
 if __name__ == "__main__":
     # OK
-    reg = Register("email@gmail.com", "1234567")
+    reg = Register("admin", "admin")
     reg.registro()
