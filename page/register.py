@@ -12,10 +12,11 @@ def register():
         [sg.Image(filename="img\img Register\Icon\CADASTRO.png", background_color=background, pad=(115,(30,0)))],
         #EMAIL
         [sg.Image(filename="img\img Register\Icon\E-MAIL.png", background_color=background, pad=(125,(40,0)))],
-        [sg.Input("", size=(30,0), font="arial 11 bold",pad=(40,(20,0)), background_color="#FF8A00", text_color="white", justification="center", key="email")],
+        [sg.Input("", size=(80,20), font="arial 11 bold",pad=(40,(20,0)), background_color="orange",border_width=0, text_color="white", justification="left", key="email", focus=True, disabled_readonly_text_color="white")],
+        [sg.Image(filename="img\img Register\Icon\line.png", background_color=background, pad=(0,(0,0)))],
         #SENHA
         [sg.Image(filename="img\img Register\Icon\SENHA.png", background_color=background, pad=(125,(40,0)))],
-        [sg.Input("", size=(30,0), font="arial 11 bold",pad=(40,(20,0)), background_color="#FF8A00", text_color="white", justification="center", key="senha", password_char="*")]
+        [sg.Input("", size=(30,0), font="arial 11 bold",pad=(40,(20,0)), background_color=None, text_color="orange", justification="left", key="senha", password_char="*")]
     ]
     
     rodape = [
