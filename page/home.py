@@ -1,25 +1,20 @@
 import PySimpleGUI as sg
 
-background = background_color = "black"
+
+sg.theme_background_color("#0A1B1E")
 def home():
-    
-    cabecalho = [
-        sg.Image(filename="img\img home\Logo\logo.png", background_color=background, pad=(0,(50,0)))
+    cabecalho = [sg.Image(filename="img\img home\Logo\logo2.png", pad=(0,(0,0)), background_color=sg.theme_background_color())]
+    opcao = [
+        [sg.Image(filename="img\img home\Icon\Invista com Taxa Zero.png", pad=(0,(60,0)), background_color=sg.theme_background_color())],
+        [sg.Image(filename="img\img home\Icon\soucliente.png", pad=(0,(30,0)), background_color=sg.theme_background_color())],
+        [sg.Image(filename="img\img home\Icon\criarconta.png", pad=(0,(0,0)), background_color=sg.theme_background_color())],
     ]
     
-    login= [
-        [sg.Image(filename="img\img home\Icon\entrar.png", background_color=background, pad=(0,(150,0)))],
-        [sg.Image(filename="img\img home\Icon\criarcadastro.png", background_color=background, pad=(0,(30,0))) ],
-        [sg.Image(filename="img\img home\Icon\Precisa de ajuda_.png", background_color=background, pad=(0,(50,0)))],
-    ]
-    layout = [cabecalho, login]
-    window = sg.Window("Ion Itau", layout=layout, size=(293,510), background_color=background,grab_anywhere=True, element_justification="center")
-    return window
-
-window = home()
-
-while True:
-    event, values = window.read()
+    layout = [cabecalho, opcao]
+    window = sg.Window("Home", layout, size=(410, 750), margins=(0,0), element_justification="c")
     
-    if event == sg.WIN_CLOSED:
-        break
+    while True:
+        event, values = window.read()
+        if event == sg.WIN_CLOSED:
+            break
+home()

@@ -9,19 +9,20 @@ def register():
     ]
     
     cadastro = [
-        [sg.Image(filename="img\img Register\Icon\CADASTRO.png", background_color=background, pad=(115,(30,0)))],
+        [sg.Image(filename="img\img Register\Icon\CADASTRO (1).png", background_color=background, pad=(100,(30,0)))],
         #EMAIL
-        [sg.Image(filename="img\img Register\Icon\E-MAIL.png", background_color=background, pad=(125,(40,0)))],
-        [sg.Input("", size=(80,20), font="arial 11 bold",pad=(40,(20,0)), background_color="orange",border_width=0, text_color="white", justification="left", key="email", focus=True, disabled_readonly_text_color="white")],
-        [sg.Image(filename="img\img Register\Icon\line.png", background_color=background, pad=(0,(0,0)))],
+        [sg.Image(filename="img\img Register\Icon\E-MAIL (1).png", background_color=background, pad=(125,(40,0)))],
+        [sg.Input("", size=(80,20), font="arial 14 bold",pad=(20,(20,0)), background_color="#FF8A00", text_color="black", justification="center", key="email")],
+        [sg.Image(filename="img\img Register\Icon\line.png", background_color=background, pad=(0,(5,0)))],
         #SENHA
-        [sg.Image(filename="img\img Register\Icon\SENHA.png", background_color=background, pad=(125,(40,0)))],
-        [sg.Input("", size=(30,0), font="arial 11 bold",pad=(40,(20,0)), background_color=None, text_color="orange", justification="left", key="senha", password_char="*")]
+        [sg.Image(filename="img\img Register\Icon\SENHA (1).png", background_color=background, pad=(125,(40,0)))],
+        [sg.Input("", size=(80,20), font="arial 14 bold",pad=(20,(20,0)), background_color="#FF8A00", text_color="black", justification="center", key="senha", password_char="*")],
+        [sg.Image(filename="img\img Register\Icon\line.png", background_color=background, pad=(0,(5,0)))],
     ]
     
     rodape = [
         [sg.Image(filename="img\img Register\Icon\checkoff.png", background_color=background, pad=(0,(40,0)), enable_events=True, key="check"),sg.Image(filename="img\img Register\Icon\licenca.png",background_color=background,pad=(10,(40,0)))],
-        [sg.Image(filename="img\img Register\Icon\direita.png", background_color=background,pad=(0,(40,0)))]
+        [sg.Image(filename="img\img Register\Icon\direita.png", background_color=background,pad=(0,(30,0)))]
     ]
     
     layout = [cabecalho, cadastro,rodape]
