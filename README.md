@@ -4,7 +4,8 @@
 
 <img src="doc/img/logo.png" alt="logo_samuelflm">
 
-> Sistema de login para desktop.
+> Um clone ou quase isso do app Ion Itau.
+> Projeto foi pensando e desenvolvido com o proposito de praticar e aplicar conceitos tecnicos de programacao. Sem Fins lucrativos ou algo para prejudicar a marca.
 
 ### Progresso
 
