@@ -1,4 +1,4 @@
-from conexao import Connection
+from Auth_conexao import Connection
 
 class Register:
     

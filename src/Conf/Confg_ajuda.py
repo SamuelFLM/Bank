@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import re
+from Page.Interface_ajuda import *
 ## Arruma bug
 window = 1
 

@@ -1,5 +1,5 @@
-from conexao import Connection
-from register import Register
+from Auth_conexao import Connection
+from Auth_register import Register
 
 class Login:
     def __init__(self, registro):
