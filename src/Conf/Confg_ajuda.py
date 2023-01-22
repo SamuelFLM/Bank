@@ -8,6 +8,11 @@ while True:
     event, values =window.read()
     if event == sg.WIN_CLOSED:
         break
+  
+    contador = len(values["comentario"])
+    window.refresh()
+    window["caracteres"].update(f"{contador}/ 50 caracteres")
+   
         
     if(bool(values["email"])):
         email = values["email"]
@@ -21,7 +26,6 @@ while True:
             window["email_titulo"].update(filename="img\img ajuda\Icon\Verifique o e-mail digitado.png")
             window["line_rosa"].update(filename="img\img ajuda\Icon\Line Rosa.png")
             window["rodape"].update(filename="img\img ajuda\Icon\Rodapeoff.png")
-        # contador = len(values["comentario"])
-        # window["caracteres"].update(f"{contador}/ 50 caracteres")
+
     if event == "rodape":
             pass            
