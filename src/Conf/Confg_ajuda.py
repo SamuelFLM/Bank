@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 import re
 from Page.Interface_ajuda import Page_ajudar
+from Page.Interface_login import login
 ## Arruma bug
 window = Page_ajudar.ajudar()
 
@@ -9,10 +10,14 @@ while True:
     if event == sg.WIN_CLOSED:
         break
   
-    contador = len(values["comentario"])
-    window.refresh()
-    window["caracteres"].update(f"{contador}/ 50 caracteres")
+    # contador = len(values["comentario"])
+    # window.refresh()
+    # window["caracteres"].update(f"{contador}/ 50 caracteres")
    
+    if event == "voltar":
+        window.close()
+        login()
+        break
         
     if(bool(values["email"])):
         email = values["email"]

@@ -26,18 +26,17 @@ def login():
     layout = [cabecalho, cadastro,rodape]
     
     window = sg.Window("CADASTRO", layout,size=(293,510), background_color=background,grab_anywhere=True, element_justification="center",margins=(0,0),)
-    return window
+    while True:
+        event, values = window.read()
+    
+        if event == sg.WIN_CLOSED:
+            break
+        
+        if event == "voltar":
+            print("voltando")
+        if event == "continuar":
+            print("continuando")
 
 
-window = login()
-while True:
-    event, values = window.read()
-    
-    if event == sg.WIN_CLOSED:
-        break
-    
-    if event == "voltar":
-        print("voltando")
-    if event == "continuar":
-        print("continuando")
+
         

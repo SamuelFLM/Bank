@@ -7,7 +7,7 @@ class Page_ajudar:
     def ajudar():
     
         cabecalho = [
-            [sg.Image(filename="img\img ajuda\Icon\Voltar.png", background_color="white", pad=(15,(40,20)), key="voltar")],
+            [sg.Image(filename="img\img ajuda\Icon\Voltar.png", background_color="white", pad=(15,(40,20)),enable_events=True, key="voltar")],
             [sg.Image(filename="img\img ajuda\Icon\Olá, como podemos te ajudar_.png", background_color="white", pad=(30,(40,40)))],
             [sg.Image(filename="img\img ajuda\Icon\Envie sua dúvida ou comentário.png", background_color="white", pad=(35,(5,40)))]],
         
