@@ -15,4 +15,4 @@
 
 > Tela de cadastro, login e de conta aprovada!
 
-<img src="doc/img/interface2.png" alt="interface">
+<img src="doc/img/interface3.png" alt="interface">
