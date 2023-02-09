@@ -12,3 +12,7 @@
 > Desenvolvi duas telas responsaveis pela interacao com o usuario.
 
 <img src="doc/img/interface.png" alt="interface">
+
+> Tela de cadastro, login e de conta aprovada!
+
+<img src="doc/img/interface2.png" alt="interface">

@@ -1,11 +1,11 @@
 import PySimpleGUI as sg
 
 
-def cadastro():
+def cadastro(home):
     sg.theme_background_color("white")
     cabecalho = [
                 sg.Image(filename="img//img Cadastro//Icon//esquerda.png", background_color="white", pad=(20,(30,0)), enable_events=True, k="voltar"),
-                sg.Image(filename="img//img Cadastro//Icon//Criarconta.png", background_color="white", pad=(10,(30,0)), enable_events=True, k="ajuda"),
+                sg.Image(filename="img//img Cadastro//Icon//Criarconta.png", background_color="white", pad=(10,(30,0)), enable_events=False, k="ajuda"),
                 ]
     logo = [sg.Image(filename="img//img Cadastro//Icon//logo.png", background_color="white", pad=(20,(50,30))),]
     dados_nome_sobrenome = [
@@ -16,18 +16,18 @@ def cadastro():
          sg.Image(filename="img//img Cadastro//Icon//linha_sobrenome.png", background_color="white", pad=(5,(0,40))),]
     ]
     dados_email = [[sg.Image(filename="img//img Cadastro//Icon//E-mail.png", background_color="white", pad=(30,(0,0)))],
-                   [sg.Input("",background_color="white", border_width=0,k="email", s=(10,0), pad=(30,(20,0)),font="Inter 13")]
+                   [sg.Input("",background_color="white", border_width=0,k="email", s=(40,0), pad=(30,(20,0)),font="Inter 13")]
                    ,sg.Image(filename="img//img Cadastro//Icon//linha_email.png", background_color="white",pad=(30,(0,40))),]
     
     dados_cpf = [[sg.Image(filename="img//img Cadastro//Icon//CPF.png", background_color="white", pad=(30,(0,0)))],
-                 [sg.Input("",background_color="white", border_width=0,k="cpf", s=(14,0), pad=(30,(20,0)),font="Inter 13")],
+                 [sg.Input("",background_color="white", border_width=0,k="cpf", s=(15,0), pad=(30,(20,0)),font="Inter 13")],
                  sg.Image(filename="img//img Cadastro//Icon//linha_cpf.png", background_color="white", pad=(30,(0,50))),]
     
     dados_data_nascimento = [[sg.Image(filename="img//img Cadastro//Icon//Data Nascimento.png", background_color="white", pad=(30,(0,0)))],
                              [sg.Input("",background_color="white", border_width=0,k="data_nascimento", s=(9,0), pad=(30,(20,0)),font="Inter 13", )],
                              sg.Image(filename="img//img Cadastro//Icon//linha_dt_nascimento.png", background_color="white", pad=(30,(0,70))),]
     
-    rodape = [sg.Image(filename="img//img Cadastro//Icon//off.png", background_color="white", enable_events=True, key="continuar", pad=(0,(0,0)))]
+    rodape = [sg.Image(filename="img//img Cadastro//Icon//off.png", background_color="white", enable_events=True, key="continuar", pad=(0,(30,0)))]
     
     layout = [cabecalho,logo,dados_nome_sobrenome,dados_email,dados_cpf,dados_data_nascimento,rodape]
     window = sg.Window("Cadastro", layout=layout, size=(410, 750), margins=(0,0), icon="img//logo.ico")
@@ -36,4 +36,8 @@ def cadastro():
         event, values =window.read(timeout=1)
         if event == sg.WIN_CLOSED:
                 break
-cadastro()
+        if event == "voltar":
+            window.close()
+            home()
+            break
+        

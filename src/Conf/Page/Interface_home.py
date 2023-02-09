@@ -24,4 +24,10 @@ def home():
             window.close()
             ajudar(home=home)
             break
+        
+        if event == "cadastro":
+            window.close()
+            cadastro(home=home)
+            break
+        
 home()
