@@ -19,7 +19,7 @@ def home():
         if event == sg.WIN_CLOSED:
             break
         if event == "login":
-            a()
+            pass
         if event == "ajuda":
             window.close()
             ajudar(home=home)
