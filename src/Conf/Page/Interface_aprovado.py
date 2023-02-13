@@ -18,7 +18,7 @@ def aprovado():
         [sg.Image(filename="img//img aprovado//icon//Line 13.png", background_color="white", pad=(20,(0,100)))]
         
     ]
-    rodape = [[sg.Image(filename="img//img aprovado//icon//rodape.png", background_color="white" , pad=(0,(30,0)))]]
+    rodape = [[sg.Image(filename="img//img aprovado//icon//rodape.png", background_color="white" , pad=(0,(30,0)), enable_events=True, k="efetuarlogin")]]
     
     layout = [cabecalho,titulo,mensagem,logo,dados_agencia_conta_corrente,senha_eletronica,rodape]
     
