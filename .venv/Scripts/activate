@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Lazer\OneDrive\Área de Trabalho\Tela Login\.venv"
+VIRTUAL_ENV="C:\Users\Lazer\OneDrive\Área de Trabalho\Projetos\Tela Login\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
