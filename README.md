@@ -14,7 +14,7 @@
 
 <img src="doc/img/interface.png" alt="interface">
 
-> Tela de cadastro, login e de conta aprovada.
+> Tela de cadastro, login e de conta aprovada!!
 
 <img src="doc/img/interface3.png" alt="interface">
 
