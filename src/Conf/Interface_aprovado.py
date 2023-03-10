@@ -9,12 +9,12 @@ def aprovado(home):
     
     dados_agencia_conta_corrente = [
         [sg.Image(filename="img//img aprovado//icon//Agência.png", background_color="white",pad=(20,(0,20))), sg.Image(filename="img//img aprovado//icon//Conta corrente.png", background_color="white", pad=(100,(0,20)))],
-        [sg.Input("4325",background_color="white", border_width=0,k="agencia",disabled=True, s=(10,0), pad=(20,(0,0)),font="Inter 13"), sg.Input("123456-1",background_color="white",disabled=True ,border_width=0,k="contacorrente", s=(10,0), pad=(65,(0,0)),font="Inter 13")],
+        [sg.Input("4325",background_color="white", disabled_readonly_background_color="white",border_width=0,k="agencia",disabled=True, s=(10,0), pad=(20,(0,0)),font="Inter 13"), sg.Input("123456-1",background_color="white",disabled_readonly_background_color="white",disabled=True ,border_width=0,k="contacorrente", s=(10,0), pad=(65,(0,0)),font="Inter 13")],
         [sg.Image(filename="img//img aprovado//icon//Line 12 (1).png", background_color="white",pad=(20,(0,0))),sg.Image(filename="img//img aprovado//icon//Line 12 (1).png", background_color="white", pad=(10,(0,0)))]
     ]
     senha_eletronica = [
         [sg.Image(filename="img//img aprovado//icon//Senha eletrônica.png", background_color="white", pad=(20,(50,0)))],
-        [sg.Input("1234",background_color="white", border_width=0,k="senha_eletronica",disabled=True, s=(10,0), pad=(20,(20,0)),font="Inter 13")],
+        [sg.Input("1234",background_color="white", disabled_readonly_background_color="white",border_width=0,k="senha_eletronica",disabled=True, s=(10,0), pad=(20,(20,0)),font="Inter 13")],
         [sg.Image(filename="img//img aprovado//icon//Line 13.png", background_color="white", pad=(20,(0,100)))]
         
     ]

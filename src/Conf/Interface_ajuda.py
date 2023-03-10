@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 import re
-
+import pyautogui as bot
 def ajudar(home):
         sg.theme_background_color("white")
         cabecalho = [
