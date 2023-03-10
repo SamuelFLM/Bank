@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-
+import pyautogui as bot
 def login(home):
     sg.theme_background_color("white")
     cabecalho = [[sg.Image(filename="img//img Login//Icon//chevron-left-24.png", background_color="white", pad=(10,(20,60)), enable_events=True, k="voltar"),sg.Image(filename="img//img Login//Icon//Group 21.png", background_color="white", pad=(15,(20,60)), enable_events=True, k="ajuda")]]
@@ -35,6 +35,12 @@ def login(home):
             home()
             break
         
-        if event == "ajuda":
-            pass
-            
+        if agencia == "4325" and conta_corrente == "123456-1" and senha == "1234":
+            bot.confirm(title="ENTROU", text="VOCE ENTROU NO SISTEMA COM SUCESSO", buttons=["OK"])
+            validacao = bot.confirm(title="ENTROU", text="DESEJA CONTINUAR?", buttons=["OK", "SAIR"])
+            if validacao == "SAIR":
+                break
+            if validacao == "OK":
+                window["agencia"].update("")
+                window["conta_corrente"].update("")
+                window["senha_eletronica"].update("")

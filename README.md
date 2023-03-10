@@ -29,7 +29,7 @@ Abrir o Projeto e executar Interface_home.exe
 
 ```shell
 Baixar o projeto 
-Abrir o Projeto e executar Interface_home.exe
+Abrir o Projeto e executar Config_SISTEMA
 ```
 
 <img src="doc/img/zip.png" alt="interface">

@@ -16,5 +16,5 @@ class Register:
         
 if __name__ == "__main__":
     # OK
-    reg = Register("admin", "admin")
+    reg = Register("samuel", "admin")
     reg.registro()
