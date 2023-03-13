@@ -11,26 +11,3 @@
 
 ### Progresso
 > Desenvolvi duas telas responsaveis pela interacao com o usuario.
-
-<img src="doc/img/interface.png" alt="interface">
-
-> Tela de cadastro, login e de conta aprovada!!
-
-<img src="doc/img/interface3.png" alt="interface">
-
-### Como Usar localmente
-
-```shell
-abrir o git e da um git clone https:/github.com/SamuelFLM/Clone-App-Ion-Itau.git
-Abrir o Projeto e executar Interface_home.exe
-```
-<img src="doc/img/git_clone.png" alt="interface">
-<img src="doc/img/home.png" alt="interface">
-
-```shell
-Baixar o projeto 
-Abrir o Projeto e executar Config_SISTEMA
-```
-
-<img src="doc/img/zip.png" alt="interface">
-<img src="doc/img/home.png" alt="interface">
