@@ -7,7 +7,7 @@
 > Um clone ou quase isso do app Ion Itau.<br>
 > Projeto foi pensando e desenvolvido com o proposito de praticar e aplicar conceitos tecnicos de programacao.<br> Sem Fins lucrativos ou algo para prejudicar a marca..
 
-# Projeto Nao finalizado em fases de desenvolvimento e testes.
+# Projeto Nao finalizado em fases de desenvolvimento e testes..
 
 ### Progresso
 > Desenvolvi duas telas responsaveis pela interacao com o usuario.
