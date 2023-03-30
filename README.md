@@ -1,8 +1,12 @@
-# App Two Bank
+# App Two Bank MVP
 
 <!---Esses são exemplos. Veja https:/shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
 <img src="doc/img/logo.png" alt="logo_samuelflm">
+
+Libs Utilizadas:
+    pysimplegui
+    pyautogui
 
 ### Progresso
 
